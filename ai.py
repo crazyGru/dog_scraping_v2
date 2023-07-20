@@ -5,7 +5,7 @@ import json
 import base64, requests
 class DogDataProcessor:
     def __init__(self):
-        self.openai_api_key="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"
+        self.openai_api_key=""
         self.db_config = {
             'host': "35.214.46.153",
             'user': "upbhfcibi1c6j",
@@ -110,6 +110,6 @@ class DogDataProcessor:
                         os.remove(f"{self.info_save_folder}{unique_key}")
 
 if __name__ == "__main__":
-    openai.api_key="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"
+    openai.api_key=""
     processor = DogDataProcessor()
     processor.process_unique_keys()
